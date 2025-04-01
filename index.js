@@ -1,23 +1,15 @@
 // Write your solution in this file!
 var customerName = "bob";
-function upperCaseCustomerName() {
+function upperCaseCustomerName(){
     customerName = customerName.toUpperCase();
 }
 function setBestCustomer() {
-    bestCustomer = "not bob";
+    bestCustomer = 'not bob'; 
+  }
+function overwriteBestCustomer(){
+    bestCustomer = 'maybe bob';
 }
-function overwriteBestCustomer() {
-    bestCustomer = "maybe bob";
+const leastFavoriteCustomer = 'right';
+function changeLeastFavoriteCustomer(){
+ leastFavoriteCustomer = 'left';
 }
-const leastFavoriteCustomer = "someone";
-
-function changeLeastFavoriteCustomer() {
-    leastFavoriteCustomer = "someone else"; // This should cause an error
-}
-module.exports = {
-    customerName,
-    upperCaseCustomerName,
-    setBestCustomer,
-    overwriteBestCustomer,
-    changeLeastFavoriteCustomer
-};
